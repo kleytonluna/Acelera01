@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon do site -->
+    <link rel="shortcut icon" href="img/logo192.png" type="image/x-icon" />
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style/style2.css" />  
+   
+    <title>tela de login</title>
+  </head>
+  <body>
+    <!-- Imagem principal da página -->
+    <img class="casal" src="img/image-main.png" alt="#">
+    <!-- Imagem do coração -->
+    <img class="coraçao" src="img/coraçao.png" alt="#">
+    
+    <!-- Formulário de login -->
+    <form action="bancologin.php" method="post">
+      <div>
+        <!-- Título da seção de login -->
+        <h1>Login</h1>
+        <!-- Campo para inserir o e-mail -->
+        <input type="email" id="email" name="email" placeholder="DIGITE SEU E-MAIL" required >
+        <br /><br />
+        <!-- Título da seção de senha -->
+        <h1>Senha</h1>
+        <!-- Campo para inserir a senha -->
+        <input type="password" id="senha" name="senha" placeholder="DIGITE SUA SENHA" required>
+        <br /><br />
+        <!-- Botão para enviar o formulário -->
+        <input type="submit" value="Entrar" id="button">
+        <!-- Link para recuperar a senha -->
+        <a href="cadastro.html" target="_blank"><h3>Esqueceu sua Senha?</h3></a>
+      </div>
+    </form>  
+    
+  </body>
+</html>
+

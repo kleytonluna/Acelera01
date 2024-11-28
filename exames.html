@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Exames</title>
+    <!-- Favicon do site -->
+    <link rel="shortcut icon" href="img/logo192.png" type="image/x-icon">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style/style6.css">
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Marcação de Exames</h1>
+
+    <!-- Formulário de marcação de exames -->
+    <form action="exames.php" method="post">
+        <!-- Campo para inserir o nome completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="DIGITE SEU NOME" required>
+
+        <!-- Campo para selecionar a data do exame -->
+        <label for="data">Data do exame:</label>
+        <input type="date" id="data" name="data" required>
+
+        <!-- Campo para selecionar o horário do exame -->
+        <label for="hora">Horário do exame:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <!-- Campo para selecionar o tipo de exame -->
+        <label for="especialidade">Tipo de exame:</label>
+        <select id="especialidade" name="especialidade" required>
+            <option value="Selecionar">SELECIONAR</option>
+            <option value="hemograma">HEMOGRAMA</option>
+            <option value="colesterol">COLESTEROL</option>
+            <option value="ureia e creatina">UREIA E CREATININA</option>
+            <option value="papanicolau">PAPANICOLAU</option>
+            <option value="urina">URINA</option>
+            <option value="fezes">FEZES</option>
+            <option value="glicemia">GLICEMIA</option>
+            <option value="ths e t4 livre">THS E T4 LIVRE</option>
+        </select>
+        
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Marcar Exame</button>
+    </form>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">Acelera Saúde</h1>
+            <p style="color: white; font-size: 20px;">Um site feito com HTML e CSS Puro</p>
+        </div>
+    </footer>
+
+    <!-- Link para contato via WhatsApp -->
+    <a class="whats" href="https://api.whatsapp.com/send/?phone=5581&text=Ol%C3%A1+cliente%2C+tudo+bem%3F&type=phone_number&app_absent=0" target="_blank">
+        <img style="width: 100px;" src="img/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.webp" alt="Logo do WhatsApp">
+    </a>
+</body>
+</html>

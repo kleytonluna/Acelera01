@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Consulta</title>
+    <!-- Favicon do site -->
+    <link rel="shortcut icon" href="img/logo192.png" type="image/x-icon">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style/style5.css">
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Marcação de Consultas</h1>
+
+    <!-- Formulário de marcação de consultas -->
+    <form action="marcacao.php" method="post">
+        <!-- Campo para inserir o nome completo -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="DIGITE SEU NOME" required>
+
+        <!-- Campo para selecionar a data da consulta -->
+        <label for="data">Data da Consulta:</label>
+        <input type="date" id="data" name="data" required>
+
+        <!-- Campo para selecionar o horário da consulta -->
+        <label for="hora">Horário da Consulta:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <!-- Campo para selecionar a especialidade médica -->
+        <label for="especialidade">Especialidade:</label>
+        <select id="especialidade" name="especialidade" required>
+            <option value="">SELECIONAR</option>
+            <option value="clinica_geral">CLÍNICA GERAL</option>
+            <option value="cardiologia">CARDIOLOGIA</option>
+            <option value="dermatologia">DERMATOLOGIA</option>
+            <option value="endogrinologia">ENDOCRINOLOGIA</option>
+            <option value="ginecologia">GINECOLOGIA</option>
+            <option value="hematologia">HEMATOLOGIA</option>
+            <option value="neurologia">NEUROLOGIA</option>
+            <option value="odontologia">ODONTOLOGIA</option>
+            <option value="ortopedia">ORTOPEDIA</option>
+            <option value="oncologia">ONCOLOGIA</option>
+            <option value="psiquiatria">PSIQUIATRIA</option>
+            <option value="pediatria">PEDIATRIA</option>
+            <option value="urologia">UROLOGIA</option>
+        </select>
+        
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Marcar Consulta</button>
+    </form>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">Acelera Saúde</h1>
+            <p style="color: white; font-size: 20px;">Um site feito com HTML e CSS Puro</p>
+        </div>
+    </footer>
+
+    <!-- Link para contato via WhatsApp -->
+    <a class="whats" href="https://api.whatsapp.com/send/?phone=5581&text=Ol%C3%A1+cliente%2C+tudo+bem%3F&type=phone_number&app_absent=0" target="_blank">
+        <img style="width: 100px;" src="img/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.webp" alt="Logo do WhatsApp">
+    </a>
+</body>
+</html>
